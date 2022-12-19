@@ -73,8 +73,6 @@ function onResize(el) {
 
     $imageX.value = positionX;
     $imageY.value = positionY;
-    
-    
 
     $percentX.value = Math.round(offsetX * 100 * 1000) / 1000
     $percentY.value = Math.round(offsetY * 100 * 1000) / 1000

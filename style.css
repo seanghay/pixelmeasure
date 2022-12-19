@@ -9,23 +9,29 @@
 .stats {
   font-size: 14px;
 	position: fixed;
-	top: 1em;
-	left: 1em;
+	right: 2em;
+	top: 2em;
 	z-index: 2;
 	padding: 1em;
 	color: black;
-	border: 1px solid rgba(0, 0, 0, 1);
+	border: 1px solid rgba(0, 0, 0, .1);
 	color-scheme: light;
 	background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
   gap: .4em;
+	opacity: .7;
+	transition: .4s ease;
 }
 
 .stats-field {
   display: flex;
   flex-direction: column;
   gap: .15em;
+}
+
+.stats:hover {
+	opacity: 1;
 }
 
 .stats input {
@@ -44,5 +50,5 @@
 }
 
 .stats label {
-	font-size: 12px;
+	font-size: 14px;
 }
